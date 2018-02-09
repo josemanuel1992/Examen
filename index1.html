@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+	<meta charset="UTF-8">
+	<title>Validación Formulario de Contacto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div id="login">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-4">
+				
+					<div class="form-group">
+						<h1> Insetar datos</h1>
+						<label for="nombre">Nombre Usuario</label>
+						<input type="text" required class="form-control" id="nombre" name="nombre">
+						<span class="error" aria-live="polite">
+					</div>
+					<div class="form-group">
+						<label for="telefono">Teléfono</label>
+						<input type="tel" class="form-control" id="telefono" name="telefono">
+					</div>
+					<div class="form-group">
+						<label for="correo">Correo electrónico</label>
+						<input type="email" class="form-control" id="correo" name="correo">
+					</div>
+					<div class="form-group">
+						<button type="button" id="botonenviar" class="btn btn-primary">ENVIAR  </button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="exito" style="display:none">
+            Sus datos han sido recibidos con éxito.
+        </div>
+        <div id="fracaso" style="display:none">
+            Se ha producido un error durante el envío de datos.
+        </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
